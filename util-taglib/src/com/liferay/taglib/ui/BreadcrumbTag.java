@@ -268,6 +268,12 @@ public class BreadcrumbTag extends IncludeTag {
 				if (siteGroupName.equals(breadcrumbTitle)) {
 					continue;
 				}
+
+				String scopeGroupName = themeDisplay.getScopeGroup().getDescriptiveName();
+				if (scopeGroupName.equals(breadcrumbTitle)) {
+					continue;
+				}
+				
 			}
 
 			if (!showCurrentPortlet) {
